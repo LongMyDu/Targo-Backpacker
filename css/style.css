@@ -9,7 +9,28 @@ header{
 }
 
 a{
-    text-align: center;
+    text-decoration: none;
+}
+
+section{
+    margin: 5% 10%;
+    padding: 10px;
+}
+
+h1{
+    font-size: 56px;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    color: #2C3E50;
+}
+
+p{
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    color: #2C3E50;
+    word-spacing: 5px;
+}
+
+a{
     text-decoration: none;
 }
 
@@ -62,4 +83,76 @@ a{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 24px;
     padding-right: 15px;
+}
+
+/* ----WELCOME SECTION-------------------------------------- */
+#welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+}
+
+#welcome img{
+    width: 35%;
+    height: 55%;
+    justify-content: center;
+}
+
+#welcome-video{
+   width: 70%;
+   height: 314px;
+   
+   background-image: url('../img/WelcomeVideo.png');
+}
+
+.welcome-container{
+    display: flex;
+    flex-direction: column;
+    /* width: 65%; */
+}
+
+/* ----FOOTER------------------------------------------------ */
+footer{
+    width: 80%;
+    padding: 0 10% 0 10%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-top: #BEBEBE solid 1.5px;
+    color: #2C3E50;
+}
+
+.footer-column h4{
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+
+}
+.footer-column a, .footer-column p{
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    color: #2C3E50;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    line-height: 2em;
+}
+
+#footer-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p{
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+footer a{
+    color: red;
+    text-align: right;
+}
+
+footer a:hover{
+    text-decoration: underline;
 }
