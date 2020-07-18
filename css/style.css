@@ -10,7 +10,7 @@ header{
 
 section{
     margin: 4% 10%;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 footer{
@@ -35,11 +35,22 @@ h2{
     color: #2C3E50;
 }
 
+ol{
+    text-decoration: none;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #2C3E50;
+    text-align: left;
+    word-wrap: break-word;
+}
+
 p{
     font-family: Tahoma, Geneva, Verdana, sans-serif;
     font-size: 24px;
     color: #2C3E50;
     word-spacing: 5px;
+    text-align: justify;
 }
 
 a{
@@ -47,7 +58,15 @@ a{
     text-decoration: none;
 }
 
+.current{
+    font-weight: bold;
+}
 
+#ab-video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /* -----LOGO-------------------------------- */
 #logo{
     background-color: #2ECC71;
@@ -172,7 +191,7 @@ a{
 
 .imgs-container a{
     width: 23%;
-    margin: 0 0.75% 5% 0.75%; 
+    margin: 3% 0.75% 5% 0.75%;
 }
 
 .imgs-container a img {
@@ -227,6 +246,13 @@ a{
     position: absolute;
     left: 5%;
     bottom: 5%;
+}
+
+/* ----ABOUT US CONTAINER ----------------------------------------- */
+
+.about-container{
+    display: flex;
+
 }
 
 /* ----FOOTER------------------------------------------------ */
