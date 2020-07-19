@@ -1,3 +1,22 @@
+/*
+
+TABLE OF CONTENT
+1.Global styling
+    1a.LOGO
+    1b.NAVBAR
+2.WELCOME SECTION
+3.PARAGRAPH CONTAINER
+4.IMG CONTAINER
+5.IMG CONTAINER
+6.ABOUT US CONTAINER
+7.DETAILED ITEMS PAGE
+    7a.DETAILED FRUIT PAGE
+    7b.DETAILED ROOMS PAGE
+8.FOOTER
+
+*/
+
+/*---- 1.Gobal styling -----------------------------------------------------------*/
 header{
     padding: 0 10% 0 10%;
     width: 80%;
@@ -10,7 +29,7 @@ header{
 
 section{
     margin: 4% 10%;
-    /* padding: 10px; */
+    padding: 10px;
 }
 
 footer{
@@ -67,7 +86,8 @@ a{
     align-items: center;
     justify-content: center;
 }
-/* -----LOGO-------------------------------- */
+
+/* ----- 1a.LOGO -------------------------------- */
 #logo{
     background-color: #2ECC71;
     border-radius: 24px;
@@ -99,7 +119,7 @@ a{
     background-position: center;
 }
 
-/* ----NAVBAR--------------------------------------------- */
+/* ---- 1b.NAVBAR--------------------------------------------- */
 #navbar{
     display: flex;
     flex-wrap: nowrap;
@@ -120,7 +140,7 @@ a{
     padding-right: 15px;
 }
 
-/* ----WELCOME SECTION-------------------------------------- */
+/* ----2.WELCOME SECTION-------------------------------------- */
 #welcome{
     display: flex;
     justify-content: center;
@@ -146,7 +166,7 @@ a{
     /* width: 65%; */
 }
 
-/* ----PARAGRAPH------------------------------------------- */
+/* ----3.PARAGRAPH CONTAINER------------------------------------------- */
 .paragraph-container{
     position: relative;
   
@@ -180,7 +200,7 @@ a{
     text-decoration: underline;
 }
 
-/* ----IMG CONTAINER ------------------------------------------ */
+/* ---- 4.IMG CONTAINER ------------------------------------------ */
 .imgs-container{
     display: flex;
     justify-content: space-between;
@@ -218,7 +238,7 @@ a{
     text-align: left;
 }
 
-/* ----FRUIT IMG------------------------------------------- */
+/* ----5.IMG CONTAINER------------------------------------------- */
 .imgs-container .fruit-img{
     position: relative;
 }
@@ -248,15 +268,16 @@ a{
     bottom: 5%;
 }
 
-/* ----ABOUT US CONTAINER ----------------------------------------- */
+/* ----6.ABOUT US CONTAINER ----------------------------------------- */
 
 .about-container{
     display: flex;
 
 }
 
-/* ----DETAILED ITEMS PAGE-------------------------------------- */
+/* ----7.DETAILED ITEMS PAGE-------------------------------------- */
 
+    /*----7a.DETAILED FRUIT PAGE---------------------------------------*/
 .price{
     font-family: Tahoma, Geneva, Verdana, sans-serif;
     color: #EB3B5A;
@@ -280,7 +301,7 @@ a{
    /* grid-row: 2; */
 }
 
-.item-showing > img{
+.item-showing >img{
     width: 100%;
 }
 .main-item{
@@ -290,8 +311,8 @@ a{
 .item-decription-container{
     display: flex;
     flex-flow: column nowrap;
-    width: 80%;
-    margin: 0 0 0 5%;
+    width: 100%;
+    margin: 0;
 }
 
 .item-decription-container > img{
@@ -315,7 +336,6 @@ a{
     height: 30px;
     font-size: 24px;
 }
-
 
 .buttons-container {
     width: 100%;
@@ -350,8 +370,68 @@ a{
     border: none;
 }
 
+    /*----7b.DETAILED ROOMS PAGE-----------------------------------------------------------------*/
 
-/* ----FOOTER------------------------------------------------ */
+.total-price{
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    color: #EB3B5A;
+    font-size: 30px;
+    margin: auto 0;
+}
+
+
+.room-decription-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 10%;
+    box-sizing: border-box;
+}
+
+.room-decription-container  .paragraph-container{
+    width: 45%;
+}
+
+.book-container{
+    width: 40%;
+    padding: 2%;
+    box-shadow: 0px 0px 5px 5px #A5B1C2;
+}
+
+.book-container > p{
+    display: inline;
+}
+
+.icon-with-box{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.icon-with-box > img{
+    width: 30px;
+    height: 30px;
+    align-items: flex-start;
+}
+
+.icon-with-box > p{
+    width: 90%;
+    align-items: flex-start;
+    border: #A5B1C2 solid 2px;
+    padding: 2px 2px;
+    border-radius: 6px;
+}
+
+.horizontal-gallery{
+    display: flex;
+    width: 80%;
+    margin: 0 10%;
+}
+
+/* ----8.FOOTER------------------------------------------------ */
 .footer-column h4{
     font-family: Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
