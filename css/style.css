@@ -255,6 +255,102 @@ a{
 
 }
 
+/* ----DETAILED ITEMS PAGE-------------------------------------- */
+
+.price{
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    color: #EB3B5A;
+    font-size: 40px;
+    margin: auto 0;
+}
+
+.item-container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 4% 10%;
+}
+
+.item-showing{
+   margin: auto;
+   display: grid;
+   width: 70%;
+   margin:0;
+   grid-template-columns: 1fr 1fr 1fr;
+   /* grid-row: 2; */
+}
+
+.item-showing > img{
+    width: 100%;
+}
+.main-item{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.item-decription-container{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 80%;
+    margin: 0 0 0 5%;
+}
+
+.item-decription-container > img{
+    width: 60%;
+    height: auto;
+}
+
+.quantity-container{
+    margin: 1em 0;
+}
+
+.quantity-container label{
+    display: inline;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    color: 2C3E50;
+    font-size: 24px;
+}
+
+.quantity-container > input[type="number"]{
+    width: 20%;
+    height: 30px;
+    font-size: 24px;
+}
+
+
+.buttons-container {
+    width: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+
+.buy-button{
+    width: 45%;
+    height: 3em;
+    background-color: #EB3B5A;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: lighter;
+    font-size: 24px;
+    border-radius: 10px;
+    letter-spacing: 4px;
+    border: none;
+}
+
+.add-button{
+    width: 45%;
+    height: 3em;
+    background-color: #F7B731;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: lighter;
+    font-size: 24px;
+    border-radius: 10px;
+    letter-spacing: 4px;
+    border: none;
+}
+
+
 /* ----FOOTER------------------------------------------------ */
 .footer-column h4{
     font-family: Tahoma, Geneva, Verdana, sans-serif;
