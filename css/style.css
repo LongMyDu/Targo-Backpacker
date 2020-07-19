@@ -431,6 +431,13 @@ a{
     margin: 0 10%;
 }
 
+    /*DETAILED JOB PAGE------------------------------------------------*/
+
+.jobs-decription-container > div:first-child{
+    display: flex;
+    justify-content: space-between;
+}
+
 /* ----8.FOOTER------------------------------------------------ */
 .footer-column h4{
     font-family: Tahoma, Geneva, Verdana, sans-serif;
