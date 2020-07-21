@@ -15,7 +15,8 @@ TABLE OF CONTENT
 8.CART PAGE
     8a.YOUR CART SECTION
     8b.INFO SECTION
-9.FOOTER
+9.BOOK ROOM PAGE
+10.FOOTER
 
 */
 
@@ -560,8 +561,81 @@ a{
     border: none;
 }
 
+/*----9.BOOK ROOM PAGE -----------------------------------------------------*/
 
-/* ----9.FOOTER------------------------------------------------ */
+.room-infor-container{
+    display: flex;
+    width: 80%;
+    margin: 2% 10%;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.room-infor-container > .book-container{
+    width: 45%;
+}
+
+.room-infor-container > .your-infor{
+    margin: 0 0;
+    padding: 0 0%;
+    width: 45%;
+}
+
+.your-infor > .infor-form{
+    display: flex;
+    flex-flow: nowrap column;
+    justify-content: flex-start;
+
+}
+
+.your-infor > .infor-form > div{
+    display: flex;
+    flex-flow: wrap row;
+    width: 100%;
+    padding: 5% 0%;
+}
+
+.your-infor > .infor-form > div > input{
+    width: 100%;
+}
+
+.book-button{
+    height: 2em;
+    background-color: #EB3B5A;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: lighter;
+    font-size: 24px;
+    border-radius: 10px;
+    letter-spacing: 4px;
+    border: none;
+    width: 30%;
+}
+
+.cancel-button{
+    color: #EB3B5A;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    font-size: 24px;
+    height: 2em;
+    border: #EB3B5A solid 1px;
+    border-radius: 10px;
+    letter-spacing: 4px;
+    background: white;
+    width: 30%;
+    margin: 0 2.5%
+}
+
+.cancel-book-buttons-container{
+    display: flex;
+
+    width: 80%;
+    margin: 0 10% 10% 10%;
+    justify-content: center;
+    
+}
+
+/* ----10.FOOTER------------------------------------------------ */
 .footer-column h4{
     font-family: Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
