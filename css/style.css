@@ -441,8 +441,19 @@ a{
     display: flex;
     width: 80%;
     margin: 0 10%;
+    object-fit: contain;
+    justify-content: space-between;
 }
 
+.horizontal-gallery >img:first-child{
+    width: 58%;
+    object-fit: fill;
+}
+
+.horizontal-gallery >img:nth-child(2){
+    width: 40%;
+    object-fit: fill;
+}
     /*7b.DETAILED JOB PAGE------------------------------------------------*/
 
 .jobs-decription-container > div:first-child{
@@ -515,20 +526,20 @@ a{
     border: 1px solid rgba(165, 177, 194, 0.5);
     height: 20px;
 }
-.infor-form > div:first-child,
-.infor-form > div:nth-child(3){
+.your-infor > .infor-form > div:first-child,
+.your-infor > .infor-form > div:nth-child(3){
     width: 30%;
 }
 
-.infor-form > div:nth-child(2){
+.your-infor > .infor-form > div:nth-child(2){
     width: 25%;
 }
 
-.infor-form > div:nth-child(4){
+.your-infor > .infor-form > div:nth-child(4){
     width: 100%;
 }
 
-.infor-form input{
+.your-infor > .infor-form input{
     width: 100%;
 }
 
@@ -581,21 +592,21 @@ a{
     width: 45%;
 }
 
-.your-infor > .infor-form{
+.room-infor-container >.your-infor > .infor-form{
     display: flex;
     flex-flow: nowrap column;
     justify-content: flex-start;
 
 }
 
-.your-infor > .infor-form > div{
+.room-infor-container > .your-infor > .infor-form > div{
     display: flex;
     flex-flow: wrap row;
     width: 100%;
     padding: 5% 0%;
 }
 
-.your-infor > .infor-form > div > input{
+.room-infor-container >.your-infor > .infor-form > div > input{
     width: 100%;
 }
 
@@ -635,7 +646,75 @@ a{
     
 }
 
-/* ----10.FOOTER------------------------------------------------ */
+/*----10.BOOK JOB PAGE -----------------------------------------------------------*/
+
+
+.job-apply-container > .your-infor > .infor-form{
+    display: flex;
+    flex-flow: wrap row;
+}
+.job-apply-container > .your-infor{
+    margin: 0% 0;
+    width: 100%; 
+}
+
+.more-about-you > textarea{
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid rgba(165, 177, 194, 0.5);
+    resize: vertical;
+}
+
+.job-apply-container > .your-infor > .infor-form > div{
+    margin: 2% 0;
+}
+
+.job-apply-container > .your-infor > .infor-form > div:nth-child(odd){
+    width: 55%;
+}
+
+.job-apply-container > .your-infor > .infor-form > div:nth-child(even){
+    width: 30%;
+}
+
+.job-apply-container > .your-infor > .infor-form > div:nth-last-child(2){
+    width: 100%;
+}
+
+.job-apply-container > .your-infor > .infor-form > div:last-child{
+    width: 70%;
+}
+
+.question-with-checkbox{
+    display: flex;
+    flex-flow: nowrap row;
+    align-items: center;
+}
+.question-with-checkbox > label{
+    width: 85%;
+}
+
+.question-with-checkbox > input[type="checkbox"]{
+    width: 15%;
+    margin: 0 5%;
+}
+
+.apply-button{
+    height: 2em;
+    background-color: #EB3B5A;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: lighter;
+    font-size: 24px;
+    border-radius: 10px;
+    letter-spacing: 4px;
+    border: none;
+    margin: auto;
+    width: 100%;
+}
+
+
+/* ----11.FOOTER------------------------------------------------ */
 .footer-column h4{
     font-family: Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
