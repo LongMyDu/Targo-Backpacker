@@ -12,7 +12,10 @@ TABLE OF CONTENT
 7.DETAILED ITEMS PAGE
     7a.DETAILED FRUIT PAGE
     7b.DETAILED ROOMS PAGE
-8.FOOTER
+8.CART PAGE
+    8a.YOUR CART SECTION
+    8b.INFO SECTION
+9.FOOTER
 
 */
 
@@ -51,6 +54,14 @@ h1{
 h2{
     font-family: Tahoma, Geneva, Verdana, sans-serif;
     font-size: 40px;
+    color: #2C3E50;
+}
+
+h3{
+    text-decoration: none;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
     color: #2C3E50;
 }
 
@@ -327,7 +338,7 @@ a{
 .quantity-container label{
     display: inline;
     font-family: Tahoma, Geneva, Verdana, sans-serif;
-    color: 2C3E50;
+    color: #2C3E50;
     font-size: 24px;
 }
 
@@ -431,14 +442,126 @@ a{
     margin: 0 10%;
 }
 
-    /*DETAILED JOB PAGE------------------------------------------------*/
+    /*7b.DETAILED JOB PAGE------------------------------------------------*/
 
 .jobs-decription-container > div:first-child{
     display: flex;
     justify-content: space-between;
 }
 
-/* ----8.FOOTER------------------------------------------------ */
+
+/*----8.CART PAGE ----------------------------------------------*/
+
+    /*----8a.YOUR CART SECTION -----------------------------------------------*/
+.cart-container{
+    margin: 0 10%;
+}
+
+.cart-container > hr{
+    color: #A5B1C2;
+}
+
+
+.cart-item{
+    display: flex;
+    width: 100%;
+    
+  
+    align-items: center;
+    justify-content: space-between;
+
+    /* border-top: solid #A5B1C2 1px; */
+    /* border-bottom: solid #A5B1C2 1px; */
+}
+
+.cart-item > img:first-child{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.cart-item > h3{
+    width: 35%;
+}
+
+.cart-item .total-price{
+    width: 15%;
+}
+
+    /*----8b.INFOR SECTION -------------------------------------------------------*/
+.your-infor{
+    margin: 0 10%;
+
+}
+.infor-form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    
+}
+
+.infor-form > div > label{
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: #2C3E50;
+    word-spacing: 5px;
+}
+.infor-form > div > input{
+    border-radius: 6px;
+    border: 1px solid rgba(165, 177, 194, 0.5);
+    height: 20px;
+}
+.infor-form > div:first-child,
+.infor-form > div:nth-child(3){
+    width: 30%;
+}
+
+.infor-form > div:nth-child(2){
+    width: 25%;
+}
+
+.infor-form > div:nth-child(4){
+    width: 100%;
+}
+
+.infor-form input{
+    width: 100%;
+}
+
+.total-box{
+    display: flex;
+    width: 30%;
+    margin: 2% 10%;
+    align-self: center;
+    justify-content: flex-end;
+    flex-flow: wrap row;
+}
+
+.total-box > p, .total-box > span {
+    width: 50%;
+}
+
+.total-box > span{
+    text-align: end;
+}
+.total-box > .purchase-button{
+    width: 100%;
+    height: 2em;
+    background-color: #F7B731;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: lighter;
+    font-size: 24px;
+    border-radius: 10px;
+    letter-spacing: 4px;
+    border: none;
+}
+
+
+/* ----9.FOOTER------------------------------------------------ */
 .footer-column h4{
     font-family: Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
