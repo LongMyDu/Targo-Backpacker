@@ -847,11 +847,12 @@ a{
     flex-flow: nowrap column;
 }
 
-.main-settings  textarea{
+.main-settings  textarea, .main-settings input{
     width: 100%;
     border-radius: 6px;
     border: 1px solid rgba(165, 177, 194, 0.5);
     resize: vertical;
+    height: 25px;
 }
 
 .main-settings button{
@@ -867,7 +868,9 @@ a{
     margin-top: 2%;
 }
 
-
+.setting > form {
+     width: 100%;
+}
 /* ----12.FOOTER------------------------------------------------ */
 .footer-column h4{
     font-family: Tahoma, Geneva, Verdana, sans-serif;
