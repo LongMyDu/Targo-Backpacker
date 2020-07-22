@@ -22,7 +22,7 @@ TABLE OF CONTENT
 
 /*---- 1.Gobal styling -----------------------------------------------------------*/
 header{
-    padding: 0 10% 0 10%;
+    padding: 0 10% 1% 10%;
     width: 80%;
     /* border-bottom: solid rgba(165, 177, 194, 0.5); */
     box-shadow: 0px 10px 10px -10px #A5B1C2;
@@ -414,7 +414,7 @@ a{
 .book-container{
     width: 40%;
     padding: 2%;
-    box-shadow: 0px 0px 5px 5px #A5B1C2;
+    box-shadow: 0px 0px 19px -4px #A5B1C2;
 }
 
 .book-container > p{
@@ -788,7 +788,87 @@ a{
     width: 75%;
 }
 
-/* ----11.FOOTER------------------------------------------------ */
+/*----GENERAL SETTINGS PAGE ------------------------------------------------*/
+
+.settings-container{
+    display: flex;
+    width: 100%;
+    margin: 0 0;
+}
+
+.setting-sidebar{
+    width: 32%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    box-shadow: 3px 5px 5px 1px rgba(165, 177, 194, 0.5);
+    padding: 4% 2%;
+}
+
+.setting-sidebar *{
+    margin: 3%;
+}
+
+.setting-sidebar a{
+    text-decoration: none;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    color: #2C3E50;
+    text-align: left;
+}
+
+.setting-sidebar a:hover{
+    text-decoration: underline;
+}
+
+.setting-sidebar ul li a{
+    font-size: 20px;
+}
+
+.setting-sidebar img{
+    margin: 0 auto;
+}
+
+.setting-sidebar hr{
+    color: rgba(165, 177, 194, 0.5);
+    width: 95%;
+    align-self: flex-start;
+}
+
+.main-settings{
+    width: 100%;
+    padding: 5% 10%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.setting{
+    display: flex;
+    flex-flow: nowrap column;
+}
+
+.main-settings  textarea{
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid rgba(165, 177, 194, 0.5);
+    resize: vertical;
+}
+
+.main-settings button{
+    background-color: #2ECC71;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.6em;
+    width: 15%;
+    text-align: center;
+    align-self: flex-end;
+    margin-top: 2%;
+}
+
+
+/* ----12.FOOTER------------------------------------------------ */
 .footer-column h4{
     font-family: Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
@@ -820,6 +900,7 @@ footer p{
 footer a{
     color: red;
     text-align: right;
+    
 }
 
 footer a:hover{

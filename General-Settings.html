@@ -16,21 +16,46 @@
             </nav>
         </header>
 
-        <section class="login-container">
-            <h3>Admin Login</h3>
-            <form class="login-form">
-                <div>
-                    <label>Username</label>
-                    <input type="text">
+        <main class="settings-container">
+            <div class="setting-sidebar">
+                <img src="img/setting-icon.png"><br>
+                <a class="current">General Settings</a>
+                <hr>
+                <a>Account</a>
+                <hr>
+                <a>Product</a>
+                    <ul>
+                        <li><a>Fruit</a></li>
+                        <li><a>Room</a></li>
+                    </ul>
+                <hr>
+                <a>Job</a>
+                <hr>
+                <a>FAQ</a>
+                <hr>
+                <a>Discount & Benefit</a>
+                <hr>
+            </div>
+            <div class="main-settings">
+                <h3>General settings</h3>
+
+                <div class="setting">
+                    <h3>Welcome message</h3>
+                    <textarea rows="6"></textarea>
+                    <button type="submit">Save</button>
                 </div>
-                <div>
-                    <label>Password</label>
-                    <input type="password">
+                <div class="setting">
+                    <h3>Intro video link</h3>
+                    <textarea rows="6"></textarea>
+                    <button type="submit">Save</button>
                 </div>
-            </form>
-            <a href="">Forget password?</a>
-            <button type="submit">Login</button>
-        </section>
+                <div class="setting">
+                    <h3>Fruit desciprtion</h3>
+                    <textarea rows="6"></textarea>
+                    <button type="submit">Save</button>
+                </div>
+            </div>
+        </main>
         <footer>
             <div id="footer-container">
                 <div class="footer-column">
