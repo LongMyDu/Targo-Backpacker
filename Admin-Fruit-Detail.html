@@ -21,11 +21,11 @@
                 <img src="img/setting-icon.png"><br>
                 <a href="General-Settings.html">General Settings</a>
                 <hr>
-                <a class="current" href="Account-Settings.html">Account</a>
+                <a href="Account-Settings.html">Account</a>
                 <hr>
-                <a>Product</a>
+                <a class="current">Product</a>
                     <ul>
-                        <li><a href="Admin-Fruit.html">Fruit</a></li>
+                        <li><a href="Admin-Fruit.html" class="current">Fruit</a></li>
                         <li><a>Room</a></li>
                     </ul>
                 <hr>
@@ -37,32 +37,38 @@
                 <hr>
             </div>
             <div class="main-settings">
-                <h3>Admin Account & Contact</h3>
-
-                <div class="setting">
-                    <h3>Contact Email</h3>
-                    <input type="email"></input>
-                    <button type="submit">Save</button>
+                <p><span class="current">Fruit</span> > Apple</p>
+                <div class="fruit-detail-settings">
+                    <div class="setting">
+                        <h3>Fruit name</h3>
+                        <input type="text">
+                    </div>   
+                    <div class="setting">
+                        <h3>Description</h3>
+                        <textarea rows="10"></textarea>
+                    </div>
+                    <div class="price-input">
+                        <h3>Price</h3>
+                        <input type="text">
+                    </div>
+                    <div class="availability-input">
+                        <h3>Availability</h3>
+                        <input type="checkbox">
+                    </div>
+                    <div class="add-image-setting">
+                        <h3>Image</h3>
+                        <div class="added-image">
+                            <img src="img/Fruit-2a.png">
+                            <img src="img/Fruit-2c.png">
+                            <img src="img/Fruit-2.png">
+                            <button></button>
+                        </div>
+                    </div>
                 </div>
-                <div class="setting">
-                    <h3>Change Password</h3>
-                    <form class="login-form">
-                        <div>
-                            <label>Old password</label>
-                            <input type="text"></input>
-                        </div>
-                        <div>
-                            <label>New password</label>
-                            <input type="text"></input>
-                        </div>
-                        <div>
-                            <label>Re-enter password</label>
-                            <input type="text"></input>
-                        </div>
-                    </form>
-                    <button type="submit">Save</button>
+                <div class="remove-save-buttons">
+                    <button class="remove-button">Remove</button>
+                    <button class="save-button">Save</button>
                 </div>
-
             </div>
         </main>
         <footer>

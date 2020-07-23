@@ -21,11 +21,11 @@
                 <img src="img/setting-icon.png"><br>
                 <a href="General-Settings.html">General Settings</a>
                 <hr>
-                <a class="current" href="Account-Settings.html">Account</a>
+                <a href="Account-Settings.html">Account</a>
                 <hr>
-                <a>Product</a>
+                <a class="current">Product</a>
                     <ul>
-                        <li><a href="Admin-Fruit.html">Fruit</a></li>
+                        <li><a href="Admin-Fruit.html" class="current">Fruit</a></li>
                         <li><a>Room</a></li>
                     </ul>
                 <hr>
@@ -37,32 +37,24 @@
                 <hr>
             </div>
             <div class="main-settings">
-                <h3>Admin Account & Contact</h3>
-
-                <div class="setting">
-                    <h3>Contact Email</h3>
-                    <input type="email"></input>
-                    <button type="submit">Save</button>
-                </div>
-                <div class="setting">
-                    <h3>Change Password</h3>
-                    <form class="login-form">
-                        <div>
-                            <label>Old password</label>
-                            <input type="text"></input>
-                        </div>
-                        <div>
-                            <label>New password</label>
-                            <input type="text"></input>
-                        </div>
-                        <div>
-                            <label>Re-enter password</label>
-                            <input type="text"></input>
-                        </div>
-                    </form>
-                    <button type="submit">Save</button>
-                </div>
-
+                <h3>Fruits</h3>
+                <button class="add-fruit-button" type="submit"><a href="Admin-Fruit-Detail.html">Add new fruit</a></button>
+                
+                <table class="fruit-table">
+                    <tr>
+                        <th class="name">Name</th>
+                        <th class="price">Price</th>
+                        <th >Availability</th>
+                        <th>Setting</th>
+                    </tr>
+                    <tr>
+                        <td>Apple</td>
+                        <td>5.0$</td>
+                        <td><input type="checkbox"></td>
+                        <td><img src="img/pencil-icon.png"><img src="img/black-trash-icon.png"></td>
+                    </tr>
+                    
+                </table>
             </div>
         </main>
         <footer>
