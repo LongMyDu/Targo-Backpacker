@@ -2,90 +2,116 @@
 <html>
     <head>
         <link rel="stylesheet" href="css/style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+        <title>Targo Backpacker | Welcome</title>
     </head>
     <body>
         <header>
-                <a href= "#" id="logo">
-                    <div id="logo-word">Targo</div>
-                    <div id="logo-img"></div>
-                </a>
-                <nav id="navbar">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="AllJobsPage.html">Job</a></li>
-                        <li><a href="AllFruitsPage.html" class="current">Fruit</a></li>
-                        <li><a href="AllRoomsPage.html">Room</a></li>
-                        <li><a href="FAQPage.html">FAQ</a></li>
-                    </ul>
-                    <div id="cart-icon"><a href="Your-Cart.html"><img src="img/AddToCartIcon.svg"/></a></div>
-                </nav>
+            <nav class="grid lr-center navbar ">
+                <a href= "index.html" class="width-6col flex align-content-center"> <img src="img/Logotargo.svg"></a>
+                <ul class="width-6col flex align-content-center">
+                    <li class="tb-center"><a href="index.html" class="current">Home</a></li>
+                    <li class="tb-center"><a href="AllJobsPage.html">Job</a></li>
+                    <li class="tb-center"><a href="AllFruitsPage.html">Fruit</a></li>
+                    <li class="tb-center"><a href="AllRoomsPage.html">Room</a></li>
+                    <li class="tb-center"><a href="FAQPage.html">FAQ</a></li>
+                    <li class="tb-center"><a href="Your-Cart.html"><img src="img/AddToCartIcon.svg"/></a></li>
+                </ul>
+            </nav>
         </header>
         <main>
-            <section><p>Fruit > Strawberry</p></section>
-            <div class= "item-container">
-                <section class="item-showing">
-                    <img src="img/Fruit-2a.png" class="main-item">
-                    <img src="img/Fruit-2a.png" style="flex-grow: 1">
-                    <img src="img/Fruit-2b.png" style="flex-grow: 1">
-                    <img src="img/Fruit-2c.png" style="flex-grow: 1">
-                </section>
+            <section class="grid lr-center">
+                <p class= "width-12col tb-margin-smaller">Fruit > Strawberry</p>
+                <div class="width-5col detail-fruit-img">
+                    <img src="img/Strawberry-1b.jpg" class="width-100 main-item">
+                    <div class="grid small-img tb-margin-smaller">
+                        <div class="width-4col pos-relative">       
+                            <div class="width-100 height-100 overlay"></div>                 
+                            <img src="img/Strawberry-1b.jpg" class="width-4col width-100 height-100">
+                        </div>
+                        <div class="width-4col pos-relative">       
+                            <div class="width-100 height-100 overlay"></div>                 
+                            <img src="img/Strawberry-1c.jpg" class="width-4col width-100 height-100">
+                        </div>                        
+                        <div class="width-4col pos-relative">       
+                            <div class="width-100 height-100 overlay"></div>                 
+                            <img src="img/Strawberry-1d.jpg" class="width-4col width-100 height-100">
+                        </div>
+                    </div>
+                </div>
 
                  <!--Item description section -->
-                <section class="item-decription-container">
+                <div class="width-7col">
                         <h2>Strawberry</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.                     </p>
-                        <p class="price">$5.00</p>
+                        <p class="price-tag-large tb-padding-small">$5.00</p>
 
-                        <div class="quantity-container">
-                            <label>Quantity: </label>
-                            <input type="number" min="1" max="100" value="1">
+                        <div class="tb-padding-medium flex f-row f-nowrap">
+                            <label class="width-25 height-100 tb-center">Quantity</label>
+                            <input type="number" min="1" max="100" value="1" class="quantity-input width-25 height-100 fontsize-medium">
                         </div>
-                        <div class="buttons-container">
-                            <button class="buy-button" type="button"><a href="Your-Cart.html">Buy now</a></button>
-                            <button class="add-button" type="button">Add to cart<img src="img/add-to-cart-icon.png"></button>
+                        <div class="grid tb-padding-small">
+                            <button class="button red-button width-6col" type="button">
+                                <a href="Your-Cart.html">Buy now</a>
+                            </button>
+                            <button class="button yellow-button width-6col flex f-row f-nowrap f-spacebetween" type="button">
+                                <a class="lr-center tb-center">Add to cart</a>
+                                <img src="img/add-to-cart-icon.png" class="lr-center tb-center">
+                            </button>
                         </div>
 
-                        <p>We accept payment with</p>
-                        <img src="img/payment-icons.png" class="payment-icon">
-                </section>
-
-               
-            </div>
+                        <p class="tb-padding-medium">We accept payment with</p>
+                        <img src="img/payment-icons.png" class="payment-icon tb-padding-small">
+                </div>
+            
+            </section>
 
             <!-- You also like section-->
-            <section class= "paragraph-container">
-                <h2>You also like </h2>
-                <a href="AllFruitsPage.html">See more</a>
-
-                <div class= "imgs-container">
-                    <a href="" class="fruit-img">
-                        <img src="img/Fruit-1.png">
-                        <h3>Grape</h3>
-                        <aside>from $5.00</aside>
-                    </a>
-                    <a href="" class="fruit-img">
-                        <img src="img/Fruit-2.png">
-                        <h3>Strawberry</h3>
-                        <aside>from $5.00</aside>
-                    </a>
-                    <a href="" class="fruit-img">
-                        <img src="img/Fruit-3.png">
-                        <h3>Mango</h3>
-                        <aside>from $5.00</aside>
-                    </a>
-                    <a href="" class="fruit-img">
-                        <img src="img/Fruit-4.png">
-                        <h3>Tomato</h3>
-                        <aside>from $5.00</aside>
-                    </a>               
+            <section>
+                <div class= "grid lr-center tb-margin-small width-12col paragraph">
+                    <h2 class="width-12col">You also like</h2>
+                    <a href="AllFruitsPage.html">See more</a>
                 </div>
-            </section>    
-            
+                <div class= "grid lr-center">
+                    <a href="" class="fruit-card width-3col">
+                        <div class="overlay width-100 height-100"></div>
+                        <img src="img/Grape-1.jpg" class="width-100">
+                        <div  class="content">
+                            <h3>Grape</h3>
+                            <aside>from $5.00</aside>
+                        </div>
+                    </a>
+                    <a href="Strawberry.html" class="fruit-card width-3col">
+                        <div class="overlay width-100 height-100"></div>
+                        <img src="img/Strawberry-1.jpg" class="width-100">
+                        <div class="content">
+                            <h3>Strawberry</h3>
+                            <aside>from $5.00</aside>
+                        </div>
+                    </a>
+                    <a href="" class="fruit-card width-3col">
+                        <div class="overlay width-100 height-100"></div>
+                        <img src="img/Mango-1.jpg" class="width-100">
+                        <div class="content">
+                            <h3>Mango</h3>
+                            <aside>from $5.00</aside>
+                        </div>
+                    </a>
+                    <a href="" class="fruit-card width-3col">
+                        <div class="overlay width-100 height-100"></div>
+                        <img src="img/Tomato-1.jpg" class="width-100">
+                        <div class="content">
+                            <h3>Tomato</h3>
+                            <aside>from $5.00</aside>
+                        </div>
+                    </a>                    
+                </div>   
+            </section>
         </main>
 
-        <footer>
-            <div id="footer-container">
-                <div class="footer-column">
+        <footer class="tb-margin-large">
+            <div class="grid tb-margin-small lr-center ">
+                <div class="footer-column flex f-column f-nowrap width-3col tb-padding-small">
                     <h4>Targo Backpacker</h4>
                     <a href="index.html">Home</a>
                     <a href="AllJobsPage.html">Job</a>
@@ -93,32 +119,34 @@
                     <a href="AllRoomsPage.html">Rooms</a>
                     <a href="FAQPage.html">FAQ</a>
                 </div>
-                <div class="footer-column">
+                <div class="footer-column flex  f-column f-nowrap width-3col tb-padding-small">
                     <h4>About</h4>
                     <a href="AboutUsPage.html#why">Why Targo Backpacker?</a>
                     <a href="AboutUsPage.html#working-place">Working Place Overview</a>
                     <a href="AboutUsPage.html#payment">Payment</a>
                 </div>
-                <div class="footer-column">
+                <div class="footer-column flex  f-column f-nowrap width-3col tb-padding-small">
                     <h4>Agreements</h4>
                     <a href="">Terms & Policies</a>
                     <a href="">Privacy</a>
                 </div>
-                <div class="footer-column">
+                <div class="footer-column flex  f-column f-nowrap width-3col tb-padding-small">
                     <h4>Contact Us</h4>
                     <a href="">Tel: +64 491 570 156</a>
                     <a href="">Email: admin@gmail.com</a>
                     <p>105 Targo street Bundaberg Qld.</p>
+                    <div class="width-4col justify-left tb-center width-75 flex f-row f-wrap f-spacebetween">
+                        <a href="https:/fb.com" class="width-25"><img src="img/Facebook-icon.png" class="width-100"></a>
+                        <a href="https:/instagram.com" class="width-25"><img src="img/Instagram-icon.png" class="width-100"> </a>
+                        <a href="https:/twitter.com" class="width-25"><img src="img/Twitter-icon.png" class="width-100"></a>
+                    </div>
                 </div>
-                <a class="footer-column" href="Admin-Login.html"><img src="img/Admin.png"></a>
+                
             </div>
-            <p>ⓒ 2019 Group 3 HCMUS. All rights reserved.</p>
-            <div id="contact-icon-container">
-                <a href="https:/fb.com" class="contact-icon"><img src="img/Facebook-icon.png"></a>
-                <a href="https:/instagram.com" class="contact-icon"><img src="img/Instagram-icon.png"> </a>
-                <a href="https:/twitter.com" class="contact-icon"><img src="img/Twitter-icon.png"></a>
+            <div class="grid tb-margin-small lr-center ">
+                <p class="tb-center width-6col">ⓒ 2019 Group 3 HCMUS. All rights reserved.</p>
+                <a class="width-6col tb-center justify-left" href="Admin-Login.html"><img src="img/Admin.png"></a>
             </div>
-            
         </footer>
     </body>
 </html>
