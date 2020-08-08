@@ -321,7 +321,22 @@ NAVBAR
 WELCOME
 ----------------------------------------------------------*/
 
+.video {
+   position: relative;
+   justify-content: center;
+}
 
+.video video {
+    z-index: -1;
+    
+}
+.video img {
+    position: absolute;
+    height: 5rem;
+    justify-self: center;
+    align-self: center;
+    width: auto;
+}
 /*----------------------------------------------------------
 PARAGRAPH
 ----------------------------------------------------------*/
@@ -339,6 +354,7 @@ PARAGRAPH
     right: 0;
     bottom: 0;
 }
+
 
 /*----------------------------------------------------------
 FRUIT CARD
