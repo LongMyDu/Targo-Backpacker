@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
-    <link rel="stylesheet" href="../css/style.css" />
+    <head>
+        <link rel="stylesheet" href="../css/style.css" />
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
         <title>Targo Backpacker | Jobs</title>
+    </head>
     <body>
         <header>
             <nav class="grid lr-center navbar ">
-                <a href= "index.html" class="width-6col flex align-content-center"> <img src="../img/Logotargo.svg"></a>
+                <a href= "../index.html" class="width-6col flex align-content-center"> <img src="../img/Logotargo.svg"></a>
                 <ul class="width-6col flex align-content-center">
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="../Job Pages/AllJobsPage.html">Job</a></li>
@@ -20,26 +22,26 @@
         <main>
             <section class="grid lr-center">
                 <p class= "width-12col tb-margin-smaller">Fruit > Strawberry</p>
-                <div class="width-5col detail-fruit-img">
+                <div class="width-5col height-100 flex f-row f-wrap detail-fruit-img">
                     <img src="../img/Strawberry-1b.jpg" class="width-100 main-item">
-                    <div class="grid small-img tb-margin-smaller">
-                        <div class="width-4col pos-relative">       
-                            <div class="width-100 height-100 overlay"></div>                 
-                            <img src="../img/Strawberry-1b.jpg" class="width-4col width-100 height-100">
+                    <div class="width-100 small-grid small-img-container tb-margin-smaller">
+                        <div class="width-4col pos-relative small-img">       
+                            <div class="overlay"></div>                 
+                            <img src="../img/Strawberry-1b.jpg">
                         </div>
-                        <div class="width-4col pos-relative">       
-                            <div class="width-100 height-100 overlay"></div>                 
-                            <img src="../img/Strawberry-1c.jpg" class="width-4col width-100 height-100">
+                        <div class="width-4col pos-relative small-img">       
+                            <div class="overlay"></div>                 
+                            <img src="../img/Strawberry-1c.jpg">
                         </div>                        
-                        <div class="width-4col pos-relative">       
-                            <div class="width-100 height-100 overlay"></div>                 
-                            <img src="../img/Strawberry-1d.jpg" class="width-4col width-100 height-100">
+                        <div class="width-4col pos-relative small-img">       
+                            <div class="overlay"></div>                 
+                            <img src="../img/Strawberry-1d.jpg">
                         </div>
                     </div>
                 </div>
 
                  <!--Item description section -->
-                <div class="width-7col">
+                <div class="width-7col height-100">
                         <h2>Strawberry</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.                     </p>
                         <p class="price-tag-large tb-padding-small">$5.00</p>
@@ -48,17 +50,17 @@
                             <label class="width-25 height-100 tb-center">Quantity</label>
                             <input type="number" min="1" max="100" value="1">
                         </div>
-                        <div class="grid tb-padding-small">
-                            <button class="button large-button red-button width-6col" type="button">
+                        <div class="small-grid">
+                            <button class="tb-margin-smaller button large-button red-button width-6col" type="button">
                                 <a href="../Cart Pages/Your-Cart.html">Buy now</a>
                             </button>
-                            <button class="button large-button yellow-button width-6col flex f-row f-nowrap f-spacebetween" type="button">
-                                <a class="lr-center tb-center">Add to cart</a>
-                                <img src="../img/add-to-cart-icon.png" class="lr-center tb-center">
+                            <button class="tb-margin-smaller button large-button yellow-button width-6col flex f-row f-nowrap" type="button">
+                                <a class="lr-center tb-center width-50">Add to cart</a>
+                                <img src="../img/add-to-cart-icon.png" class="tb-center">
                             </button>
                         </div>
 
-                        <p class="tb-padding-medium">We accept payment with</p>
+                        <p>We accept payment with</p>
                         <img src="../img/payment-icons.png" class="payment-icon tb-padding-small">
                 </div>
             
@@ -66,7 +68,7 @@
 
             <!-- You also like section-->
             <section>
-                <div class= "grid lr-center tb-margin-small width-12col paragraph">
+                <div class= "grid lr-center tb-margin-medium width-12col paragraph">
                     <h2 class="width-12col">You also like</h2>
                     <a href="AllFruitsPage.html">See more</a>
                 </div>

@@ -11,16 +11,16 @@ body {
 }
 
 h1 {
-    font-size: 56px;
+    font-size: 230%;
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 100%;
 }
 
 h4, 
 aside {
-    font-size: 16px;
+    font-size: 80%;
 }
 
 p {
@@ -48,7 +48,7 @@ input {
     border: 1px solid rgba(165, 177, 194, 0.5);
     border-radius: 8px;
     padding-left: 0.5em;
-    font-size: 20px;
+    font-size: 80%;
     min-height: 1.5em;
 }
 
@@ -62,7 +62,7 @@ nav li{
 
 footer {
     border-top: #BEBEBE solid 1.5px;
-    font-size: 16px;
+    font-size: 80%;
 }
 .grid{
     max-width: 1140px;
@@ -71,9 +71,15 @@ footer {
     grid-template-rows: minmax(1rem, auto);
    
     column-gap: 2rem;
-    justify-self: center;
 }
 
+.small-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: minmax(1rem, auto);
+    column-gap: 0.5rem;
+    justify-self: center;
+}
 .block {
     display: block;
 }
@@ -280,8 +286,10 @@ footer {
 }
 
 .fontsize-medium{
-    font-size: 16px;
+    font-size: 100%;
 }
+
+
 
 .pos-relative {
     position: relative;
@@ -289,13 +297,13 @@ footer {
 
 .price-tag-large {
     color: #EB3B5A;
-    font-size: 40px;
+    font-size: 160%;
     font-weight: 600;
 }
 
 .price-tag-medium {
     color: #EB3B5A;
-    font-size: 24px;
+    font-size: 100%;
     font-weight: 600;
 }
 
@@ -321,22 +329,7 @@ NAVBAR
 WELCOME
 ----------------------------------------------------------*/
 
-.video {
-   position: relative;
-   justify-content: center;
-}
 
-.video video {
-    z-index: -1;
-    
-}
-.video img {
-    position: absolute;
-    height: 5rem;
-    justify-self: center;
-    align-self: center;
-    width: auto;
-}
 /*----------------------------------------------------------
 PARAGRAPH
 ----------------------------------------------------------*/
@@ -345,16 +338,15 @@ PARAGRAPH
 }
 
 .paragraph h2 {
-    font-size: 40px;
+    font-size: 160%;
 }
 
 .paragraph a {
     color: #F65E39;
     position: absolute;
     right: 0;
-    bottom: 0;
+    top: 110%;
 }
-
 
 /*----------------------------------------------------------
 FRUIT CARD
@@ -380,6 +372,8 @@ FRUIT CARD
 }
 
 .overlay {
+    width: 100%;
+    height: 100%;
     background: linear-gradient(0deg, rgba(0,0,0,0.9332107843137255) 0%, rgba(124, 65, 65, 0) 50%);
     z-index: 1;
     position: absolute;
@@ -417,17 +411,27 @@ CARD TYPE 2 (ROOM CARD & JOB CARD)
 }
 
 .main-item {
-    height: 27rem;
+    height: 25rem;
     border-radius: 8px;
 }
 
-.small-img div{
-    height: 9rem;
+.small-img-container {
+    height: 10rem;
+}
+
+.small-img {
+    width: 100%;
+    height: 100%;
     border-radius: 8px;
     overflow: hidden;
+   
 }
-.small-img img {
+
+.small-img > img {
     z-index: -1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
  
 
@@ -442,17 +446,17 @@ INPUT & BUTTON
 
 .small-button {
     height: 2.5rem;
-    font-size: 18px;
+    font-size: 75%;
 }
 
 .medium-button {
     height: 3rem;
-    font-size: 24px;
+    font-size: 100%;
 }
 
 .large-button {
     height: 4rem;
-    font-size: 24px;
+    font-size: 100%;
 }
 
 .button {
@@ -559,7 +563,7 @@ SETTING & LOGIN
 }
 
 .login-box > a{
-    font-size: 16px;
+    font-size: 80%;
     font-style: italic;
 }
 
@@ -580,4 +584,103 @@ SETTING & LOGIN
     border-radius: 8px;
     overflow: hidden;
     border: 0;
+}
+
+
+@media (max-width : 768px)  {
+    /* Styles */
+    body {
+        font-size: 20px;
+    }
+
+    .grid {
+        max-width: 700px;
+        column-gap: 0.7rem;
+    }
+
+    .lr-center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .tb-margin-small, 
+    .tb-margin-smaller {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .tb-margin-medium {
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .tb-margin-large {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .grid .width-1col {
+        grid-column: span 1;
+    }
+    .grid .width-2col {
+        grid-column: span 2;
+    }
+    .grid .width-3col,
+    .grid .width-4col{
+        grid-column: span 6;
+    }
+    .grid .width-5col,
+    .grid .width-6col,
+    .grid .width-7col,
+    .grid .width-8col,
+    .grid .width-9col,
+    .grid .width-10col,
+    .grid .width-11col
+    .grid .width-12col {
+        grid-column: span 12;
+    }
+   
+    .small-grid .width-4col {
+        grid-column: span 4;
+    }
+
+    .small-grid .width-3col {
+        grid-column: span 3;
+    }
+    /* WELCOME */
+    
+    /* FRUIT */
+    .fruit-card {
+        height: 22rem;
+        margin: 2rem 0;
+    }
+
+    .detail-fruit-img {
+        height: auto;
+    }
+
+    .small-img {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cart-item img:first-child{
+        height: 5rem;
+    }
+    
+    /* PARAGRAPH */
+    .paragraph {
+        height: auto;
+    }
+
+    .lr-margin-smaller {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+    .lr-margin-small {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    /* SETTING */
+
 }
