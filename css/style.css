@@ -524,11 +524,40 @@ GALLERY
 ----------------------------------------------------------*/
 .horizontal-gallery {
     height: 70vh;
+    position: relative;
+    overflow: hidden;
+
 }
 
 .horizontal-gallery img {
     border-radius: 8px;
     object-fit: cover;
+}
+
+.gallery-slider {
+    transition: 0.3s ease-in-out;
+}
+
+.right-arrow,
+.left-arrow {
+    font-size: 200%;
+    color: rgb(221, 219, 219);
+    position: absolute;    
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+.right-arrow {
+    right: 0;
+}
+
+.left-arrow {
+    left: 0;
+}
+
+.right-arrow:hover,
+.left-arrow:hover {
+    color: rgb(194, 194, 194);
 }
 
 

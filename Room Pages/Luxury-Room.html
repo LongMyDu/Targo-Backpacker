@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
-    <link rel="stylesheet" href="../css/style.css" />
+    <head>
+        <script src="https://kit.fontawesome.com/8857bfb7d3.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../css/style.css" />
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-        <title>Targo Backpacker | Jobs</title>
+        <title>Targo Backpacker | Rooms</title>
+    </head>
     <body>
         <header>
             <nav class="grid lr-center navbar ">
@@ -18,14 +21,29 @@
             </nav>
         </header>
         <main>
-            <section class="grid lr-center">
-                <p class="width-12col tb-margin-smaller">Stay > Luxury Room<p>
+            <div  class="grid width-100 lr-center tb-margin-smaller">
+                <p class="width-12col">Stay > Luxury Room</p>
+            </div>
 
-                <div class="width-12col grid lr-center horizontal-gallery">
-                    <img src="../img/BasicRoom-2.jpg" class="width-7col width-100 height-100">
-                    <img src="../img/LuxuryRoom-2.jpg" class="width-5col width-100 height-100">
+            <!-- IMG SLIDER -->
+            <section class="grid lr-center">    
+                <div class="width-12col">
+                    <div class="width-75 height-100 lr-center horizontal-gallery">
+                        <div class= "lr-center height-100 flex f-row f-nowrap gallery-slider">
+                            <img src="../img/BasicRoom-2.jpg" class="width-100 height-100">
+                            <img src="../img/BasicRoom-2.jpg" class="width-100 height-100">
+                            <img src="../img/BasicRoom-2.jpg" class="width-100 height-100">
+                            <img src="../img/LuxuryRoom-2.jpg" class="width-100 height-100">
+                        </div>
+                        <div class="width-75 lr-center hie">
+                            <i class="fas fa-angle-right right-arrow"></i>
+                            <i class="fas fa-angle-left left-arrow"></i>
+                        </div>
+                    </div>
+                    
                 </div>
             </section>
+            
            
              <!--Item description section -->
              <section class="grid lr-center tb-margin-small">
@@ -125,5 +143,6 @@
                 <a class="width-6col tb-center justify-left" href="../Admin Pages/Admin-Login.html"><img src="../img/Admin.png"></a>
             </div>
         </footer>
+        <script src="../js/effects.js"></script>
     </body>
 </html>
